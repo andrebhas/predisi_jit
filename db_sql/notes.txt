@@ -1,0 +1,3 @@
+SELECT SUM(detail_penjualan.nilai) FROM detail_penjualan 
+JOIN penjualan ON penjualan.nota = detail_penjualan.nota
+WHERE YEAR(penjualan.tgl) = '2013' AND MONTH(penjualan.tgl) = '01' 
